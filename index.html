@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="images/TrollFace.ico">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Tp2 Julian Ibanez</title>
+    </head>
+    <body>
+        <header id="en_haut">
+            <nav>
+                <a href="#en_haut">Accueil</a><a href="#formulaire">Services</a><a href="#tableau">Mes hobbies</a><a href="#articles">Mes travaux</a><a href="#gallerie">Mes inspirations</a><a href="#travaux">Galerie de travaux</a>
+            </nav>
+            <div class="entete">
+                <img src="images/Shiro autoretrato.png" alt="Moi">
+                <div>
+                    <h1>Mon porfolio</h1>
+                    <h2>TP2</h2>
+                    <h2>Julian Camilo Ibanez</h2>
+                    <h3>582-1W1 - Mise en page Web</h3>
+                    <h3>Techniques d'intégration multimédia</h3>
+                    <h3>Collège de Maisonneuve</h3>
+                    <h3>Automne 2022</h3>
+                </div>
+            </div>
+        </header>
+        <div id="main">
+            <div id="formulaire">
+                <h1>Formulaire de commission</h1>
+                <form>
+                    <legend>Feuille de commission</legend>
+                    <fieldset class="colonne">
+                        <label>Prénom ou Pseudonyme: <input type="text"></label>
+                        <label>Âge: <input type="number" min="1" max="85"></label>
+                        <label for=sociaux>Quel réseau social utilisez-vous le plus? <select id="sociaux" name="sociaux">
+                            <option value="discord">Discord</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="twitter">Twitter</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="snapchat">Snapchat</option></select></label>
+                        </select>
+                        <label>Votre utilisateur dans ce réseau social:<input type="text"></label>
+                        <label for="datemax">Quand êtes-vous disponible? 
+                            <input type="date" id="datemax" name="datemax" min="2023-01-01" max="2023-12-31">
+                        </label>
+                    </fieldset>
+                    <fieldset class="colonne">
+                        <fieldset>
+                            <legend>De quel service avez-vous besoin ?</legend>
+                            <label><input type="checkbox">Coaching LoL</label>
+                            <label><input type="checkbox">Commission Pixelart</label>
+                            <label><input type="checkbox">Commission PerlerBeads</label>
+                            <label><input type="checkbox">Aide avec hmtl ou css</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Combien êtes-vous prêt à payer ?</legend>
+                            <label><input type="radio" name="prix">5$-10$</label>
+                            <label><input type="radio" name="prix">15$-30$</label>
+                            <label><input type="radio" name="prix">40$-50$</label>
+                            <label><input type="radio" name="prix">60$+</label>
+                        </fieldset>
+                    </fieldset>
+                    <fieldset>
+                    <legend>Expliquez-moi ce dont vous avez besoin</legend>
+                    <textarea name="info" rows="10" cols="50" placeholder="Veuillez expliquer vos besoins de la manière la plus détaillée possible."></textarea>
+                    </fieldset>
+                    <fieldset id="boutons">
+                        <input type="reset" value="Vider" class="bForm">
+                        <input type="submit" value="Envoyer" class="bForm">
+                    </fieldset>
+                </form>
+            </div>
+            <div id="tableau">
+                <h1>Tableau avec mes hobbies</h1>
+                <table>
+                    <caption>
+                        <details>
+                            <summary>Mes hobbies</summary>
+                            Tout les choses que j'aime faire
+                        </details>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th scope="row">Hobbies</th>
+                            <th scope="col">Motif</th>
+                            <th scope="col">Vision</th>
+                            <th scope="col">Exemples</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Gaming</th>
+                            <td>Je me souviens encore du moment où j'ai eu ma première console, en janvier 2009, j'ai reçu une xbox 360. Depuis ce jour, je n'ai cessé de jouer à des jeux vidéo et de découvrir chaque jour de nouvelles choses sur ce média.</td>
+                            <td>Devenir un joueur professionnel n'est plus une option, mais mon objectif en matière de jeux est de créer un ou plusieurs jeux vidéo que les gens peuvent apprécier et jouer. </td>
+                            <td><video width="320" height="240" controls>
+                                <source src="video/leFunny.mp4">
+                            </video></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Pixelart</th>
+                            <td>En 2021, j'ai commencé à faire de l'art numérique connu sous le nom de Pixelart. Depuis lors, je continue à m'exercer et à améliorer mes compétences dans cet art. </td>
+                            <td>Améliorer mon style pour devenir aussi reconnaissable que les jeux populaires de notre époque (Katana zero, Hotline Miami, Dead cells, etc.).</td>
+                            <td><img src="images/Guitarras para oc.png" alt="reb" width="275" height="125"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">PerlerBeads</th>
+                            <td>Après une année passée à faire du pixel art en numérique, je me suis donné l'occasion d'essayer le pixel art à la main, plus connu sous le nom de PerlerBeads.</td>
+                            <td>Bien que les dessins puissent être des répliques d'autres styles de pixel art, mon objectif est de créer mon propre style dans cet artisanat et de pouvoir les vendre avec une bonne qualité et un bon design.</td>
+                            <td><img src="images/perlerBeads.jpg" alt="perler" width="256" height=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Écouter de la musique</th>
+                            <td>Depuis mon plus jeune âge, j'aime la musique. Aujourd'hui encore, j'aime écouter différents genres de musique et découvrir de nouveaux artistes chaque jour.</td>
+                            <td>À l'avenir, j'aimerais apprendre à jouer de la guitare électrique et faire ma propre musique.</td>
+                            <td>(Cette chanson ne m'appartient pas, elle est de l'artiste Scattle.)
+                                <audio controls>
+                                <source src="audio/Remorse.mp3">
+                            </audio></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Montage vidéo</th>
+                            <td>Cette année, j'ai eu un contact plus profond avec le montage vidéo, avant j'ai exploré ce médium mais maintenant je peux dire que c'est quelque chose que je fais normalement et que j'aime faire.</td>
+                            <td>Bien que je n'aie pas encore de projet fixe, j'aimerais créer mon propre contenu et avoir une base de fans décente.</td>
+                            <td><video width="320" height="240" controls>
+                                <source src="video/lol.mp4">
+                            </video></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Animation</th>
+                            <td>Bien que je n'aie aucune connaissance en matière d'animation, j'aime beaucoup la façon dont elle est réalisée et j'adore découvrir de nouvelles séries qui montrent leur potentiel tant au niveau de l'art que de l'animation elle-même.</td>
+                            <td>J'aimerais en apprendre davantage sur ce médium et, à terme, être capable de réaliser des animations de bonne qualité.</td>
+                            <td><img src="images/anim.gif" alt="jeanne" width="200" height="130"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="articles">
+                <h1>Mes travaux</h1>
+            <article>
+                <section>
+                    <h2>Création de personnages</h2>
+                <p>J'ai fait ce dessin il y a quelques temps, je voulais trouver un mélange entre un tueur silencieux mais sans grande expérience. Avec l'aide de mon ami Tuki, j'ai pu trouver un design qui me plaisait et qui était bon en général, même si plus tard j'essaierai de l'améliorer ou de le changer.</p> 
+                </section>
+                <figure>
+                    <img src="images/Chiro.png" alt="chiro" width="320" height="525">
+                    <figcaption>Mon personnage appelé Chiro</figcaption>
+                </figure>
+            </article>
+            <article>
+                <section>
+                    <h2>Animations</h2>
+                <p>Cette animation a été créée pour un cadeau à un autre artiste appelé Sheo. Chaque fois que je fais une animation, j'essaie de la rendre aussi belle que possible et j'essaie d'élargir mes connaissances pour réaliser quelque chose de plus fluide et d'impressionnant.</p> 
+                </section>
+                <figure>
+                    <img src="images/secret santa sheo.gif" alt="bernardito" width="375" height="375">
+                    <figcaption>Ce personnage appelle Bernardito appartient à 
+                        <a href="https://twitter.com/sheoLB">@SheoLb</a></figcaption>
+                </figure>
+            </article>
+            <article>
+                <section>
+                    <h2>Plus de cadeaux</h2>
+                <p>Depuis ce travail, je me suis beaucoup intéressé aux portraits en pixel art. Je pourrais dire que c'est ce que je fais le mieux et ce que j'aime le plus faire.</p> 
+                </section>
+                <figure>
+                    <img src="images/REB.png" alt="reb" width="400" height="480">
+                    <figcaption>Cet homme est <a href="https://twitter.com/rebtain">@Rebtain</a>, co-créateur de la Coalition Pixel et critique de jeux vidéo.</figcaption>
+                </figure>
+            </article>
+            <article>
+                <section>
+                    <h2>Albums</h2>
+                <p>J'ai décidé de dessiner cette pochette d'album pour tester comment je pouvais adapter un autre type d'art au pixel art. Pour l'instant, je n'ai pas encore fait ce genre d'art, mais je prévois de faire plus de ce genre de travail. </p> 
+                </section>
+                <figure>
+                    <img src="images/Appetite for destruction.png" alt="gunsNroses" width="375" height="375">
+                    <figcaption>L'album le plus connu du grand groupe, GunsNRoses, Appetite for destruction.</figcaption>
+                </figure>
+            </article>      
+            </div>
+            <div id="gallerie">
+                <h1>Mes motivations</h1>
+                <h3>Des artistes, des œuvres, des créateurs de contenu et diverses autres choses qui me poussent à m'améliorer ou simplement à avoir mon point de vue sur certaines choses.</h3>
+                <div>
+                    <figure>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ozaIMRpxSJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <figcaption>KSLV (Killer Sounds Lofi Visuals) Mon artiste préféré du genre phonk</figcaption>
+                    </figure>
+                    <figure>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gQ5gtInauiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <figcaption>Mon artiste préféré de tous les temps, Carpenter Brut.</figcaption>
+                    </figure>
+                    <figure>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/XZT3nlxuXl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <figcaption>Mon créateur de contenu préféré, Sseth.</figcaption>
+                    </figure>
+                    <figure>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VufDd-QL1c0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <figcaption>L'animateur qui a façonné ma vie et m'a montré que de petits projets avec de grandes idées peuvent aller tout aussi loin, Alan Becker.</figcaption>
+                    </figure>
+                    <figure>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/UUqUZ7uumqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <figcaption>Mon film préféré, Spiderman : into the spiderverse. Sa suite sortira en 2023.</figcaption>
+                    </figure>
+                    <figure>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Kqr0yUuSiTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <figcaption>Mon jeu vidéo et mon œuvre d'art préférés, Hotline Miami 1 & 2.</figcaption>
+                    </figure>
+                </div>      
+            </div>
+            <div id="travaux">
+                <h1>Toutes mes travaux en ordre chronologique</h1>
+                <div>
+                    <img src="images/Challenge 2.PNG" alt="first">
+                    <img src="images/Mug.PNG" alt="mug">
+                    <img src="images/Chiro 8x8.PNG" alt="petit">
+                    <img src="images/Neveh 8x8.PNG" alt="cousin">
+                    <img src="images/Tuko 8x8.PNG" alt="ami">
+                    <img src="images/Pila 16x16.PNG" alt="based">
+                    <img src="images/Cactus 16x16.PNG" alt="lol">
+                    <img src="images/Jeanne 16x16.PNG" alt="PremiereOC">
+                    <img src="images/Hilbert 32x32.PNG" alt="pkmn">
+                    <img src="images/Miki 32x32.PNG" alt="leader">
+                    <img src="images/Paiz 32x32.PNG" alt="bro">
+                    <img src="images/Miki en garde.gif" alt="attack">
+                    <img src="images/gun.gif" alt="elpila">
+                    <img src="images/Miki ataque.gif" alt="weeb">
+                    <img src="images/Dirt texture.png" alt="dirt">
+                    <img src="images/Concreto.png" alt="rock">
+                    <img src="images/Grass texture.png" alt="grass">
+                    <img src="images/Map.png" alt="sprite">
+                    <img src="images/Hydro + GUNS + FONDO.png" alt="DeuxiemeOC">
+                    <img src="images/Appetite for destruction.png" alt="GNR">
+                    <img src="images/Hydro fondo  64x64.png" alt="hydro">
+                    <img src="images/Sword 2.gif" alt="sword">
+                    <img src="images/Guitarras para oc.png" alt="guitar">
+                    <img src="images/Super mapache.gif" alt="racoon">
+                    <img src="images/Armas variadas.png" alt="weapons">
+                    <img src="images/Sprite-0002.png" alt="summer">
+                    <img src="images/Coneja TAMAL.png" alt="TAMAL">
+                    <img src="images/jeanne.png" alt="HD">
+                    <img src="images/Joules.png" alt="troisiemeOC">
+                    <img src="images/secret santa sheo.gif" alt="bear">
+                    <img src="images/Coal .png" alt="coal">
+                    <img src="images/REB.png" alt="pto">
+                    <img src="images/Shiro autoretrato.png" alt="me">
+                    <img src="images/Nyki y yo.png" alt="sadge">
+                    <img src="images/Chiro.png" alt="QuatriemeOC">
+                    <img src="images/I love drut.png" alt="drututt">
+                </div>
+            </div>    
+        </div>
+        <footer>
+            <div>
+            <h2>3800 R. Sherbrooke E, Montréal, QC H1X 2A2</h2>
+            <h2>Technique d'integration multimédia</h2>
+            <h5>Avis de confidentalité | Privacy Police</h5>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/Chiropte/?ref=py_c"><img src="https://s2.svgbox.net/social.svg?ic=facebook&color=dedef6" width="32" height="32"></a>
+                <a href="https://mobile.twitter.com/chiroelsirope"><img src="https://s2.svgbox.net/social.svg?ic=twitter&color=dedef6" width="32" height="32"></a>
+                <a href="https://www.instagram.com/chiro_joules/?hl=fr"><img src="https://s2.svgbox.net/social.svg?ic=instagram&color=dedef6" width="32" height="32"></a>
+                <a href="https://open.spotify.com/user/f78gb3r70gsqiter81ioi17kj"><img src="https://s2.svgbox.net/social.svg?ic=spotify&color=dedef6" width="32" height="32"></a>
+                <a href="https://www.twitch.tv/chiro_joules"><img src="https://s2.svgbox.net/social.svg?ic=twitch&color=dedef6" width="32" height="32"></a>
+                <a href="https://steamcommunity.com/profiles/76561198179425049"><img src="https://s2.svgbox.net/social.svg?ic=steam&color=dedef6" width="32" height="32"></a>
+                <a href="https://discord.gg/jwK6qcfKak"><img src="https://s2.svgbox.net/social.svg?ic=discord&color=dedef6" width="32" height="32"></a>
+            </div>
+        </footer>
+    </body>
+</html>
